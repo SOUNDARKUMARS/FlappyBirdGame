@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="fbd.css">
+    <link rel="icon" type="image/png" href="img/bird.png">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Signika+Negative&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        h1{
+            position: absolute;
+            top: 1px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 5px;
+            font-family: 'Pangolin', cursive;
+        }
+    #pressEnter{
+        font-weight: bolder; 
+        background-color:blanchedalmond; 
+        padding: 8px 40px; 
+        border-radius: 6px; border:
+         1px solid saddlebrown;
+         visibility: hidden;
+         text-align: center;
+         font-family: 'Bebas Neue', sans-serif;
+         letter-spacing: 5px;
+         cursor:not-allowed;
+    }
+    </style>
+</head>
+<body>
+    <h1>Flappy Bird Game</h1>
+    <audio id="aud1" src="audio/jam-spotlight-lazytoms-l-29565.mp3"></audio>
+    <audio id="aud2" src="audio/merx-market-song-33936.mp3"></audio>
+    <audio id="lost_aud" src="audio/mixkit-arcade-space-shooter-dead-notification-272.wav"></audio>
+    <audio id="aud4" src="audio/mixkit-game-show-intro-943.wav"></audio>
+    <audio id="aud5" src="audio/mixkit-game-show-uplifting-944.wav"></audio>
+    <audio id="aud6" src="audio/space_line-27593.mp3"></audio>
+    <audio id="aud7" src="audio/town-of-tranqness-25976.mp3"></audio>
+    <div>
+        <img  id="musicBtn" src="img/music-notes.png" alt="">
+        <img class="muteBtn" id="muteBtn" src="img/mute.png" alt="">
+    </div>
+    <canvas id="canvas" height="650px" width="1049"></canvas>
+    <p id="pressEnter"> Enter to Restart</p>
+    <script src="fbd.js"></script>
+</body>
+</html>
